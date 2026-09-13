@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VRC ルーム探訪 | VRChatのお部屋系ワールド検索</title>
+<meta name="description" content="VRChatの「お部屋」「くつろぎ」系ワールドを、実際の内見のように紹介・検索できるサイトです。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <h1 class="site-title">
+      VRCルーム探訪
+      <small>VRChatの「お部屋」系ワールド内見サイト</small>
+    </h1>
+    <div class="site-subline" id="generated-at"></div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="filters" aria-label="絞り込み検索">
+    <h2>絞り込み</h2>
+
+    <div class="filter-group">
+      <label class="filter-group__label" for="search-input">キーワード</label>
+      <input id="search-input" class="search-input" type="text" placeholder="ワールド名・作者名・概要から検索">
+    </div>
+
+    <div class="filter-group">
+      <span class="filter-group__label">タグ</span>
+      <div class="chip-list" id="tag-filter"></div>
+    </div>
+
+    <div class="filter-group">
+      <span class="filter-group__label">対応プラットフォーム</span>
+      <div class="chip-list" id="platform-filter"></div>
+    </div>
+
+    <div class="filter-group">
+      <span class="filter-group__label">想定人数（上限）</span>
+      <div class="range-row">
+        <input type="number" id="capacity-max" min="1" placeholder="例: 8">
+        <span>人まで</span>
+      </div>
+    </div>
+
+    <button class="filters-reset" id="reset-filters" type="button">絞り込みをリセット</button>
+  </aside>
+
+  <main>
+    <div class="data-notice" id="data-notice" hidden>
+      現在、著作権チェック等が完了し公開できるワールドがまだ登録されていません。
+      調査・レビューが完了次第、随時掲載されます。
+    </div>
+
+    <div class="results-bar">
+      <div class="results-count"><strong id="result-count">0</strong> 件のワールドが見つかりました</div>
+      <select class="sort-select" id="sort-select">
+        <option value="favorites-desc">お気に入りが多い順</option>
+        <option value="updated-desc">更新が新しい順</option>
+        <option value="capacity-asc">想定人数が少ない順</option>
+        <option value="name-asc">名前順</option>
+      </select>
+    </div>
+
+    <div class="listing-grid" id="listing-grid" data-animate="true"></div>
+
+    <div class="empty-state" id="empty-state" hidden>
+      <h3>条件に合うワールドが見つかりませんでした</h3>
+      <p>キーワードや絞り込み条件を変えて、もう一度お試しください。</p>
+    </div>
+  </main>
+</div>
+
+<footer class="site-footer">
+  掲載情報はVRChat公式APIおよび現地調査に基づきます。著作権上の配慮からレビュー・確認が完了したワールドのみ掲載しています。<br>
+  各ワールドの詳細・訪問はVRChat内から行ってください。
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
