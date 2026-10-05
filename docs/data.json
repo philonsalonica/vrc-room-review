@@ -1,5 +1,38 @@
 {
-  "generatedAt": "2026-09-12T06:37:56",
-  "count": 0,
-  "listings": []
+  "generatedAt": "2026-10-05T23:55:05",
+  "count": 1,
+  "listings": [
+    {
+      "id": "2",
+      "worldUrl": "https://vrchat.com/home/world/wrld_42af1ca2-157c-4a88-b87f-1ac32cbea539",
+      "name": "Digitown Loft",
+      "authorName": "不明（要調査）",
+      "authorId": "",
+      "tags": [
+        "chill",
+        "room",
+        "loft"
+      ],
+      "description": "",
+      "capacity": "最大32人",
+      "recommendedCapacity": "",
+      "platform": [],
+      "layoutType": "ロフト風ワンルーム",
+      "mood": "casual/chill",
+      "facilities": [
+        "プールテーブル",
+        "シャワー",
+        "通り(屋外)"
+      ],
+      "gimmick": "隣人NPC演出, Digimon要素の言及あり",
+      "visits": 18216,
+      "favorites": 612,
+      "publicationDate": "",
+      "updatedDate": "",
+      "thumbnailUrl": "",
+      "youtubePreviewUrl": "",
+      "reviewVideoUrl": "",
+      "status": "調査済"
+    }
+  ]
 }
